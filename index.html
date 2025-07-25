@@ -284,6 +284,11 @@
         #gallery {
             scroll-margin-top: 140px;
         }
+
+        .card{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -367,6 +372,38 @@
         </div>
     </section>
 
+    <section id="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="reviews">
+            <div class="card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Absolutely loved my haircut and spa session. Professional staff and great ambiance!"</p>
+                <strong>- Priya Sharma</strong>
+            </div>
+            <div class="card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Amazing bridal makeup done perfectly. I got so many compliments on my big day!"</p>
+                <strong>- Anjali Verma</strong>
+            </div>
+            <div class="card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Very clean and hygienic salon. Friendly service and timely appointments!"</p>
+                <strong>- Riya Sen</strong>
+            </div>
+            <div class="card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"The staff is very experienced and they gave me exactly the look I wanted."</p>
+                <strong>- Neha Kapoor</strong>
+            </div>
+            <div class="card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"I visited for a hair color session — the result was fantastic. Highly recommended!"</p>
+                <strong>- Meera Joshi</strong>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         &copy; 2025 The Salon Masters | Designed by <a href="https://www.instagram.com/metallified/" id="profileLink"
             target="_blank"> Anurag Chakraborty</a>
@@ -385,7 +422,6 @@
         <button id="next-arrow" class="nav-arrow">&#10095;</button>
     </div>
 
-
     <script>
         function scrollToTop() {
             window.scrollTo({
@@ -393,7 +429,6 @@
                 behavior: 'smooth'
             });
         }
-        
         const modal = document.getElementById("image-modal");
         const modalImg = document.getElementById("modal-img");
         const clickableImgs = document.querySelectorAll(".clickable-image");
