@@ -20,7 +20,7 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box; 
             scroll-behavior: smooth;
         }
 
@@ -50,6 +50,11 @@
         header h1 {
             font-size: 2.8em;
             margin-bottom: 10px;
+            transition: color 0.5s ease;
+        }
+
+        header h1:hover{
+            color: #f3b400;
         }
 
         nav a {
@@ -57,7 +62,7 @@
             margin: 0 10px;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: color 0.5s ease;
         }
 
         nav a:hover {
@@ -96,29 +101,6 @@
 
         .gallery {
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        }
-
-        form input,
-        form textarea,
-        form button {
-            width: 100%;
-            margin-bottom: 12px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        form button {
-            background: black;
-            color: white;
-            border: none;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        form button:hover {
-            background: #444;
         }
 
         footer {
@@ -280,6 +262,7 @@
         }
 
         #outlets,
+        #reviews,
         #services,
         #gallery {
             scroll-margin-top: 140px;
@@ -300,6 +283,7 @@
             <a href="#outlets">Outlets</a>
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
         </nav>
     </header>
 
@@ -373,7 +357,7 @@
     </section>
 
     <section id="reviews">
-        <h2 class="section-title">Customer Reviews</h2>
+        <h2 class="section-title">Reviews</h2>
         <div class="reviews">
             <div class="card">
                 <p>⭐⭐⭐⭐⭐</p>
